@@ -1,376 +1,427 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="da">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="system.css">
-    <title>Struktur starter</title>
-</head>
-<body id="top">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="system.css" />
+    <title>Blank Struktur</title>
+  </head>
+  <body>
     <!-- Header -->
-    <header class="navbarfixed">
-        <div class="container flex flex-row justify-between items-center p-l-lg p-r-lg p-t-md p-b-md">
-            <div class="logo"><a href="#top" class="text-decoration-none text-xl">Struktur</a></div>
-            <nav class="hidden visible-md">
-                <a href="#container" class="p-r-sm">Container</a>
-                <a href="#grid" class="p-r-sm">Grid</a>
-                <a href="#farver" class="p-r-sm">Farver</a>
-                 <a href="#tekst" class="p-r-sm">Tekst</a>
-                <a href="#fotos" class="p-r-sm">Fotos</a>
-                <a href="#forms" class="p-r-sm">Forms</a>
-            </nav>
-            <div class="navicon hidden-md">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6" height="32" width="32">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                </svg>
-            </div>
-            <nav class="mobile-menu hidden flex-col justify-center items-center hidden-md">
-                <a href="#top" class="p-r-sm">Top</a>
-                <a href="#container" class="p-r-sm">Container</a>
-                <a href="#grid" class="p-r-sm">Grid</a>
-                <a href="#farver" class="p-r-sm">Farver</a>
-                 <a href="#tekst" class="p-r-sm">Tekst</a>
-                <a href="#fotos" class="p-r-sm">Fotos</a>
-                <a href="#forms" class="p-r-sm">Forms</a>
-            </nav>
+    <header class="">
+      <div class="container flex flex-row justify-between items-center p-md">
+        <div class="logo">
+          <a href="/" class="text-decoration-none text-xl">Struktur</a>
         </div>
+        <nav class="hidden visible-md">
+          <a href="#" class="p-r-sm">Bogen</a>
+          <a href="#" class="p-r-sm">Forfatterne</a>
+          <a href="#" class="btn">Køb nu!</a>
+        </nav>
+        <div class="navicon hidden-md">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+            height="32"
+            width="32"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </div>
+        <nav
+          class="mobile-menu hidden flex-col justify-center items-center hidden-md"
+        >
+          <a href="#" class="p-r-sm">Navigation 1</a>
+          <a href="#" class="p-r-sm">Navigation 2</a>
+          <a href="#">Navigation 3</a>
+        </nav>
+      </div>
     </header>
     <!-- Header slut -->
 
-    <!-- Main content -->
+    <!-- Main -->
     <main>
-
-        <div class="container-full bg-dark text-bright p-zero p-t-xxxl">
-            <div class="container ">
-                <div class="grid">
-                    <div class="col-12 col-md-6 col-lg-8">
-                        <img src="filer/struktur.jpg" alt="struktur hero foto"  >
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 content-center text-center md:text-left">
-                        <h1>Struktur</h1>
-                        <p>Et lille, ultrakompakt CSS-skelet til dit næste website</p>
-                        <a href="https://github.com/stefangrage/struktur/" target="_blank" rel="noopener noreferrer" class="btn btn-md btn-outline">Hent struktur på GitHub</a>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="grid">
+          <div class="col-12 col-start-1 col-md-6">
+            <img
+              src="filer/kobenhavnerbilleder-sten-simons.jpg"
+              alt="København"
+            />
+          </div>
+          <div class="col-12 col-start-1 col-md-6 col-md-start-7">
+            <h1>
+              Københavnerbilleder - En guide til hipster foto af Sten Simons Køb
+              den før din nabo!
+            </h1>
+            <button type="submit" class="btn btn-primary btn-full">
+              Køb nu!
+            </button>
+          </div>
         </div>
+      </div>
 
-        <div class="container m-t-xxxl">
-            <div class="grid">
-                <div class="col-12 col-md-6 col-lg-4 content-center text-center">
-                    <div class="flex flex-row justify-center p-b-md">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6" width="32" height="32">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 8.689c0-.864.933-1.406 1.683-.977l7.108 4.061a1.125 1.125 0 0 1 0 1.954l-7.108 4.061A1.125 1.125 0 0 1 3 16.811V8.69ZM12.75 8.689c0-.864.933-1.406 1.683-.977l7.108 4.061a1.125 1.125 0 0 1 0 1.954l-7.108 4.061a1.125 1.125 0 0 1-1.683-.977V8.69Z" />
-                        </svg>
-                    </div>
-                    <h2>Hurtigt og nemt</h2>
-                    <p>Struktur er et lille CSS-skelet, der gør det nemt at komme i gang med dit næste website. Det er hurtigt at implementere og kræver minimal opsætning.</p>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 content-center text-center ">
-                    <div class="flex flex-row justify-center p-b-md">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6" width="32" height="32">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25" />
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6" width="32" height="32">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
-                        </svg>       
-                    </div>
-                    <h2>Responsivt design</h2>
-                    <p>Struktur er designet til at være fuldt responsivt, hvilket betyder, at dit website vil se godt ud på alle enheder, fra mobiltelefoner til desktops.</p>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 content-center text-center">
-                    <div class="flex flex-row justify-center p-b-md">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6"  width="32" height="32">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 1 0-7.517 0c.85.493 1.509 1.333 1.509 2.316V18" />
-                        </svg>
-                    </div>
-                    <h2>Let at tilpasse</h2>
-                    <p>Med struktur kan du nemt tilpasse farver, typografi og layout for at matche din egen stil og branding.</p>
-                </div>
-            </div>
+      <div class="container">
+        <div class="grid">
+          <div class="col-12 col-start-1 col-md-3 col-md-start-4">
+            <h2>Kort om bogen</h2>
+            <p>
+              Københavnerbilleder er de danske streetfotografers bibel: Det er
+              en fusion mellem et kunstværk og en lærebog. Bogen gennemgår alle
+              væsentlige aspekter af streetfotografering fra grundlæggende
+              teknik til kreative eksperimenter. Alt sammen krydret med masser
+              af inspirerende fotos. God læselyst!
+            </p>
+          </div>
+          <div class="col-12 col-start-1 col-md-3 col-md-start-7">
+            <h2>Quickfacts om bogen</h2>
+            <li>Titel: Københavnerbilleder - en guide til hipster foto</li>
+            <li>Forfatter: Sten Simons</li>
+            <li>Antal sider: 344</li>
+            <li>Forlag: Mellem Linjerne</li>
+            <li>ISBN: 987-6-987654-32-1</li>
+            <li>Pris: 399.-</li>
+          </div>
         </div>
+      </div>
 
-        <!-- Container eksempler -->
-        <div class="container p-b-zero m-t-xxl" id="container">
-            <div class="grid">
-                <div class="col-12">
-                    <h2 class="text-xl text-primary-dark">Container eksempler</h2>
-                </div>
-            </div>
+      <div class="container">
+        <div class="grid">
+          <div class="col-12 col-md-4">
+            <img src="/filer/kobenhavnerbilleder_oppefra.jpg" alt="" />
+          </div>
+          <div class="col-12 col-md-4">
+            <img
+              src="filer/kobenhavnerbilleder_aaben_venstre.jpg"
+              alt="københavn"
+            />
+          </div>
+          <div class="col-12 col-md-4">
+            <img
+              src="filer/kobenhavnerbilleder-sten-simons.jpg"
+              alt="København"
+            />
+          </div>
         </div>
+      </div>
 
-        <section class="container gap-xs md:gap-md bg-secondary-light">
-            <div class="grid">
-                <div class="col-12 col-md-6">
-                    <p>Det hele starter med en container: Et html-element, f.eks. en div eller en section, med class container.</p>
-                    <p>Containeren pakker sitets indhold ind i forskellige bredder, afhængigt af skærmstørrelsen, og inde i containeren kan du tilføje grid eller flex layouts.</p>
-                </div>
-                <div class="col-12 col-md-6">     
-                    <p>Den orange kassee rundt om viser at indholdet i denne .container har en max-width på 1280px, og indtil de 1280px fylder .container hele skærmen, på når og er centreret/har lige margener</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="container-full m-t-xxxl p-t-xxl p-b-xxl bg-primary-light text-bright">
-            <div class="container border-md">
-                <div class="grid">
-                    <div class="col-12 col-md-6 ">
-                        <p>En container-full fylder hele skærmen, uanset skærmstørrelsen. Den kan bruges til at skabe fuldskærmsbaggrunde eller sektioner, der strækker sig over hele bredden af skærmen.</p>
-                    </div>
-                    <div class="col-12 col-md-6">     
-                        <p>Inde i en container-full kan du placere andre elementer, som f.eks. en ny container til at pakke indholdet ind i en max-bredde på 1280px. Her ses en sådan container, afgrænset af den hvide kasse.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="container-narrow m-t-xxl p-md border-md text-bright">
-                <p>En container-narrow har en max-width på 640px, og er gode til længere tekstdokumenter,f.eks. blog- eller nyhedssektioner.</p>
-            </div>
-        </section>
-        <!-- Container eksempler slut-->
-
-        <!-- Grid eksempler -->
-        <div class="container p-b-zero m-t-xxxl" id="grid">
-            <div class="grid">
-                <div class="col-12">
-                    <h2 class="text-xl text-primary-dark">Grid eksempler</h2>
-                </div>
-            </div>
+      <div class="container">
+        <div class="col-12 col-md-6">
+          <h1>Anmeldelser</h1>
         </div>
-
-        <section class="container ">
-            <div class="grid">
-                <div class="col-12">
-                    <p>En container kan deles op i 12 kolonner ved hjælp af .grid classen. Grid bestående af 12 kolonner med gap-md:</p>
-                </div>
-            </div>
-            <div class="grid gap-xs md:gap-md">
-                <div class="col-1 border-sm content-center text-center">1</div> 
-                <div class="col-1 border-sm content-center text-center">2</div> 
-                <div class="col-1 border-sm content-center text-center">3</div> 
-                <div class="col-1 border-sm content-center text-center">4</div> 
-                <div class="col-1 border-sm content-center text-center">5</div> 
-                <div class="col-1 border-sm content-center text-center">6</div> 
-                <div class="col-1 border-sm content-center text-center">7</div> 
-                <div class="col-1 border-sm content-center text-center">8</div> 
-                <div class="col-1 border-sm content-center text-center">9</div> 
-                <div class="col-1 border-sm content-center text-center">10</div> 
-                <div class="col-1 border-sm content-center text-center">11</div> 
-                <div class="col-1 border-sm content-center text-center">12</div> 
-            </div>
-        </section>
-
-        <section class="container gap-xs md:gap-md">
-            <div class="grid">
-                <div class="col-12">
-                    <p>Grid bestående af 12 kolonner med gap-md:</p>
-                </div>
-            </div>
-            <div class="grid gap-xs sm:gap-md">
-                <div class="col-1 border-sm content-center text-center">col-1</div> 
-                <div class="col-2 border-sm content-center text-center">col-2</div> 
-                <div class="col-3 border-sm content-center text-center">col-3</div> 
-                <div class="col-4 border-sm content-center text-center">col-4</div> 
-                <div class="col-5 border-sm content-center text-center">col-5</div> 
-                <div class="col-6 border-sm content-center text-center">col-6</div> 
-                <div class="col-7 border-sm content-center text-center">col-7</div>
-                <div class="col-8 border-sm content-center text-center">col-8</div> 
-                <div class="col-9 border-sm content-center text-center">col-9</div> 
-                <div class="col-10 border-sm content-center text-center">col-10</div> 
-                <div class="col-11 border-sm content-center text-center">col-11</div> 
-                <div class="col-12 border-sm content-center text-center">col-12</div>
-            </div>
-        </section>
-
-        <section class="container gap-xs sm:gap-md">
-            <div class="grid">
-                <div class="col-12">
-                    <p>Simpelt responsivt grid med to breakpoints og gap-xs md:gap-md:</p>
-                </div>
-            </div>
-            <div class="grid">
-                <div class="col-6 col-md-3  border-sm content-center text-center">col-6 col-md-3</div>
-                <div class="col-6 col-md-3  border-sm content-center text-center">col-6 col-md-3</div> 
-                <div class="col-6 col-md-6  border-sm content-center text-center">col-6 col-md-6</div> 
-                <div class="col-6 col-md-12  border-sm content-center text-center">col-6 col-md-12</div>
-            </div>
-        </section>
-
-        <section class="container gap-xs sm:gap-md">
-            <div class="grid">
-                <div class="col-12">
-                    <p>Responsive cols med forskellige bredder og gap-xs sm:gap-md:</p>
-                </div>
-            </div>
-            <div class="grid">
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 border-sm content-center text-center">col-12 col-sm-6 col-md-4 col-lg-3</div> 
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 border-sm content-center text-center">col-12 col-sm-6 col-md-4 col-lg-3</div> 
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 border-sm content-center text-center">col-12 col-sm-6 col-md-4 col-lg-3</div> 
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 border-sm content-center text-center">col-12 col-sm-6 col-md-4 col-lg-3</div> 
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 border-sm content-center text-center">col-12 col-sm-6 col-md-4 col-lg-3</div> 
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 border-sm content-center text-center">col-12 col-sm-6 col-md-4 col-lg-3</div> 
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 border-sm content-center text-center">col-12 col-sm-6 col-md-4 col-lg-3</div> 
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 border-sm content-center text-center">col-12 col-sm-6 col-md-4 col-lg-3</div> 
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 border-sm content-center text-center">col-12 col-sm-6 col-md-4 col-lg-3</div> 
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 border-sm content-center text-center">col-12 col-sm-6 col-md-4 col-lg-3</div> 
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 border-sm content-center text-center">col-12 col-sm-6 col-md-4 col-lg-3</div> 
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 border-sm content-center text-center">col-12 col-sm-6 col-md-4 col-lg-3</div> 
-            </div>
-        </section>
-
-        <section class="container gap-xs md:gap-md">
-            <div class="grid">
-                <div class="col-12">
-                    <p>Simpelt responsivt grid med to breakpoints og col-start forskydningsmulighed og gap-xs md:gap-md:</p>
-                </div>
-            </div>
-            <div class="grid">
-                <div class="col-6 col-start-4 col-md-3 col-md-start-1 border-sm content-center text-center">col-6 col-start-4 col-md-3 col-md-start-1</div>
-                <div class="col-6 col-md-3  border-sm content-center text-center">col-6 col-md-3</div> 
-                <div class="col-6 col-md-6  border-sm content-center text-center">col-6 col-md-6</div> 
-                <div class="col-6 col-start-4 col-md-8 col-md-start-3  border-sm content-center text-center">col-6 col-start-4 col-md-8 col-md-start-3</div>
-            </div>
-        </section>
-        <!-- Grid eksempler slut-->
-
-        <!-- Farver eksempler -->
-        <div class="container p-b-zero m-t-xxxl" id="farver">
-            <div class="grid">
-                <div class="col-12">
-                    <h2 class="text-xl text-primary-dark">Farver eksempler</h2>
-                    <p>Farverne defineres i CSS variable</p>
-                </div>
-                <div class="col-12 col-md-4">
-                    <p>Primærfarven:</p>
-                    <div class="bg-primary p-md text-bright text-center">.bg-primary</div>
-                </div>
-                <div class="col-12 col-md-4">
-                    <p>Primærfarven, lys:</p>
-                    <div class="bg-primary-light p-md text-bright text-center">.bg-primary-light</div>
-                </div>
-                <div class="col-12 col-md-4">
-                    <p>Primærfarven, mørk:</p>
-                    <div class="bg-primary-dark p-md text-bright text-center">.bg-primary-dark</div>
-                </div>
-                <div class="col-12 col-md-4">
-                    <p>Sekundærfarven:</p>
-                    <div class="bg-secondary p-md text-bright text-center">.bg-secondary</div>
-                </div>
-                <div class="col-12 col-md-4">
-                    <p>Sekundærfarven, lys:</p>
-                    <div class="bg-secondary-light p-md text-bright text-center">.bg-secondary-light</div>
-                </div>
-                <div class="col-12 col-md-4">
-                    <p>Sekundærfarven, mørk:</p>
-                    <div class="bg-secondary-dark p-md text-bright text-center">.bg-secondary-dark</div>
-                </div>
-            </div>
+        <div class="grid">
+          <div class="col-12 col-md-4">
+            <p class="text-bold">5 af 6 stjerner</p>
+            <p>
+              Københavnerbilleder er en grundig introduktion til at skyde
+              billeder med retro-kant. Hvad enten du er har arbejdet med foto
+              siden 135-filmen kom på markedet, du kun har skudt digitalt eller
+              er helt nybegynder, er der masser af tips og tricks i bogen.
+            </p>
+            <p>Hanne Hovgaard, Berlingeren</p>
+          </div>
+          <div class="col-12 col-md-4">
+            <p>4 af 5 stjerner</p>
+            <p>
+              Teksten er underholdende, og billederne er sku’ flotte. Hvad mere
+              skal man sige om en fotobog?
+            </p>
+            <p>Kim Kloggaard, Fotojournalen.dk</p>
+          </div>
+          <div class="col-12 col-md-4">
+            <strong> <p>6 af 6 stjerner</p></strong>
+            <p>
+              Sten Simons kan det der - og han bliver bedre og bedre. Stens
+              tredje fotobog er klart den bedste - her er han for alvor i sit
+              rette element, meget bedre end “studiefotografering som
+              begyndere.” Tillykke - godt arbejde.
+            </p>
+            <p>Volmer Hansen, Lukkertiden.dk</p>
+          </div>
         </div>
-        <!-- Farver eksempler slut-->
+      </div>
 
-        <!-- Tekst eksempler -->
-        <div class="container p-b-zero m-t-xxxl" id="tekst">
-            <div class="grid">
-                <div class="col-12">
-                    <h2 class="text-xl text-primary-dark">Tekst eksempler</h2>
-                </div>
-                <div class="col-12">
-                    <h1>Det her er en h1</h1>
-                </div>
-                <div class="col-12">
-                    <h2>Det her er en h2</h2>
-                </div>
-                <div class="col-12">
-                    <h3>Det her er en h3</h3>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <p>Det her er et normalt tekstafsnit - et paragraph element. Paragraffen indeholder almindeligt tekst, som kan bruges til at forklare eller uddybe et emne. Længden justeres på basis af col-classes. I dette eksempel bliver paragraffen vist i en kolonne, der tager 12 kolonner på små skærme, 6 kolonner på mellemstore skærme og 4 kolonner på store skærme.</p> 
-                    <p class="text-light">Teksten kan også gøres tyndere med text-light.</p>
-                    <p class="text-bold"> Eller tykkere med text-bold.</p>
-                    <p class="text-sm">Eller mindre med class'en text-sm.</p>
-                    <p>Og her er et eksempel på et link: <a href="#">Her er et link</a></p>
-                </div>
-            </div>
+      <div class="container">
+        <div class="col-12 col-md-6">
+          <h1>Bogens kapitler</h1>
         </div>
-         <!-- Tekst eksempler slut-->
-
-        <!-- Foto eksempler -->
-        <div class="container p-b-zero m-t-xxxl" id="fotos">
-            <div class="grid">
-                <div class="col-12">
-                    <h2 class="text-xl text-primary-dark">Foto eksempler</h2>
-                </div>
-            </div>
+        <div class="grid">
+          <div class="col-12 col-md-6">
+            <h3>Kapitel 1 - Intro til street foto</h3>
+            <p>
+              Hvad er street foto? Det handler i bund og grund om at skyde byens
+              liv og byens geometri (urban geometry). I dette kapitel får du en
+              grundig intro til hvad street foto er og et overblik over nogen af
+              de kendte street-fotografer. Alt krydret med en masse gode
+              eksempler på street fotos.
+            </p>
+          </div>
+          <div class="col-12 col-md-6">
+            <h3>Kapitel 2 - Om at skyde street</h3>
+            <p>
+              Vil du skyde street? Så er der ikke nogen vej udenom: Du skal ud
+              på gaderne og prøve det! I dette kapitel får du en teknisk
+              indføring i hvordan du bedst skyder street. Uanset om du er
+              begynder eller professionel, er der mange gode tekniske tips og
+              tricks til street-skyderiet.
+            </p>
+          </div>
+          <div class="col-12 col-md-6">
+            <h3>Kapitel 3 - Om at finde det rette motiv</h3>
+            <p>
+              Indimellem er man heldig, andre gange kommer man hjem helt uden
+              gode motiver. Med et par tips og tricks til at finde de rette
+              motiver, stiger chancen gevaldigt for at fange de gode motiver.
+            </p>
+          </div>
+          <div class="col-12 col-md-6">
+            <h3>Kapitel 4 - Digital street foto</h3>
+            <p>
+              De fleste af os skyder oftest digitalt fordi det er billigere og
+              nemmere. Og nogen teknikker og fremgangsmåder egner sig kun til
+              digital street foto. I dette kapitel får du en række tips og
+              tricks til digital street-foto.
+            </p>
+          </div>
+          <div class="col-12 col-md-6">
+            <h3>Kapitel 5 - Analog street foto</h3>
+            <p>
+              Analog er sejt fordi det er mere “ægte,” dyrere og mere besværligt
+              end digital. Det signalerer entusiasme. Nogle teknikker og
+              fremgangsmåder egner sig bedst til analog street foto. I dette
+              kapitel får du en række tips og tricks til analog street- foto.
+            </p>
+          </div>
+          <div class="col-12 col-md-6">
+            <h3>Kapitel 6 - Om at skyde sort/hvid</h3>
+            <p>
+              Alle street-fotografer skyder sort/hvid nu og da. Nogen altid.
+              Hvorfor? Hvad er der specielt ved sort/hvid fotografering, og hvad
+              adskiller sort/hvid fra farvefotografering? Her får du en række
+              tips og tricks til sort/hvid fotografering.
+            </p>
+          </div>
+          <div class="col-12 col-md-6">
+            <h3>Kapitel 7 - Kreative teknikker</h3>
+            <p>
+              Dobbelteksponeringer, ICM (intentional camera moves), smadrede
+              objektiver, gamle filmruller og alle mulige andre, spændende
+              kreative teknikker kan løfte dine fotografier fra at være kedelige
+              dokumentationer af hverdagen til at blive vilde kunststykker. Så
+              dyk ned i dette kapitel om eksperimenterende teknikker!
+            </p>
+          </div>
+          <div class="col-12 col-md-6">
+            <h3>Kapitel 8 - Kom helt tæt på!</h3>
+            <p>
+              Street foto handler om at fotografere livet på gaden - men tør du
+              at gå helt tæt på fremmede mennesker og knipse løs? Du kan lige så
+              godt øve dig, for det er det der vil gøre dig til en bedre
+              street-fotograf…
+            </p>
+          </div>
         </div>
+      </div>
 
-        <section class="container gap-xs md:gap-md text-center">
-            <div class="grid">
-                <div class="col-12">
-                    <p class="text-left">Fotos. Grid bestående af 12 kolonner med gap-xs md:gap-md:</p>
-                </div>
-            </div>
-            <div class="grid">
-                <div class="col-6 border-sm"><img src="/filer/struktur.jpg" alt="foto"><p>col-6 border-sm</p></div> 
-                <div class="col-6 border-sm"><img src="/filer/struktur.jpg" alt="foto"><p>col-6 border-sm</p></div> 
-                <div class="col-3 border-sm"><img src="/filer/struktur.jpg" alt="foto"><p>col-3 border-sm</p></div> 
-                <div class="col-3 border-sm content-center"><img src="/filer/struktur.jpg" alt="foto"><p>col-6 border-sm content-center</p></div> 
-                <div class="col-6 border-sm"><img src="/filer/struktur.jpg" alt="foto"><p>col-6 border-sm</p></div> 
-                <div class="col-4 col-lg-2 border-sm"><img src="/filer/struktur.jpg" alt="foto"><p>col-4 col-lg-2 border-sm</p></div>
-                <div class="col-4 col-lg-2 border-sm"><img src="/filer/struktur.jpg" alt="foto"><p>col-4 col-lg-2 border-sm</p></div> 
-                <div class="col-4 col-lg-2 border-sm rounded-sm"><img src="/filer/struktur.jpg" class="rounded-sm" alt="foto"><p>col-4 col-lg-2 border-sm rounded-sm + img rounded-sm</p></div> 
-                <div class="col-4 col-lg-2 border-sm rounded-md"><img src="/filer/struktur.jpg" class="rounded-md-top" alt="foto"><p>col-4 col-lg-2 border-sm rounded-md + img rounded-md-top</p></div>
-                <div class="col-4 col-lg-2 border-sm rounded-lg-top"><img src="/filer/struktur.jpg" class="rounded-lg-top" alt="foto"><p>col-4 col-lg-2 border-sm rounded-lg-top + img rounded-lg-top</p></div> 
-                <div class="col-4 col-lg-2 border-sm rounded-full-top"><img src="/filer/struktur.jpg" class="rounded-full-top" alt="foto"><p>col-4 col-lg-2 border-sm rounded-full-top + image rounded-full-top</p></div> 
-            </div>
-        </section>
-        <!-- Foto eksempler slut-->
-
-        <!-- Form eksempler -->
-        <div class="container p-b-zero m-t-xxxl" id="forms">
-            <div class="grid">
-                <div class="col-12">
-                    <h2 class="text-xl text-primary-dark">Form eksempel</h2>
-                </div>
-            </div>
+      <div class="container">
+        <div class="grid">
+          <div class="col-12 col-start-1 col-md-3 col-md-start-4">
+            <img src="filer/sten_simons.jpg" alt="" />
+          </div>
+          <div class="col-12 col-start-1 col-md-4 col-md-start-7">
+            <h2>Forfatteren</h2>
+            <p>
+              Sten Simons har en lang foto-karriere bag sig. Det hele startede i
+              00’erne, da han gik rundt i Pisserenden for at fotografere
+              ungdommens forfald. Det ledte til en række udstillinger, og blev
+              senere til hans først fotobog “Ungdomsdruk - pinlige billeder fra
+              nattelivet.”
+            </p>
+            <p>
+              Derefter tog karrieren fart: Han blev fotojournalist og
+              dokumenterede en masse dagligdagsstof fra Amager på dagbladet
+              “Amagerkaneren.” Sideløbende begyndte han at undervise i foto, og
+              har skrevet et utal af bøger, herunder bestsellerne Scener fra
+              S-toget, Brun mad - en visuel odysse, og lærebogen Fotografering
+              for evnesvage.
+            </p>
+          </div>
         </div>
-
-        <section class="container ">
-            <div class="grid">
-                <div class="col-12 col-md-6 col-lg-6 content-center">
-                    <form action="#" method="post" class="form">
-                        <div class="m-b-lg">
-                            <label for="name">Navn:</label>
-                            <input type="text" id="name" name="name" placeholder="Indtast dit navn" required>
-                        </div>
-                        <div class="m-b-lg">
-                            <label for="email">Email:</label>
-                            <input type="email" id="email" name="email" placeholder="Indtast din email" required>
-                        </div>
-                        <div class="m-b-lg">
-                            <label for="message">Besked:</label>
-                            <textarea id="message" name="message" placeholder="Skriv din besked her..." required></textarea>
-                        </div>
-                        <div class="text-right">
-                            <button type="submit" class="btn btn-primary btn-full">Send</button>
-                        </div>
-                        
-                    </form>
-                </div>
-            </div>
-        </section>
-        <!-- Form eksempler slut -->
-    
-
+      </div>
     </main>
+
+    <div class="container">
+      <h1>Udvalgte billeder fra bogen</h1>
+      <div class="grid">
+        <div class="col-6 col-md-3">
+          <img src="filer/foraar-med-et-agfa-lebox-2-20.jpg" alt="foto" />
+          <img
+            class="m-t-md"
+            src="filer/vinter-2021-med-lomo-smena-17.jpg"
+            alt="foto"
+          />
+          <img
+            class="m-t-md"
+            src="filer/vinter-2021-med-lomo-smena-6.jpg"
+            alt="foto"
+          />
+          <img
+            class="m-t-md"
+            src="filer/foraar-med-et-agfa-le-box-2021-17.jpg"
+            alt="foto"
+          />
+          <img class="m-t-md" src="filer/kbh-by-night-3.jpg" alt="foto" />
+          <img
+            class="m-t-md"
+            src="filer/orestad-til-islands-brygge-pentax-auto-110-24.jpg"
+            alt="foto"
+          />
+          <img
+            class="m-t-md"
+            src="filer/agfa-genanvendeligt-kamera-35mm-film-2-7.jpg"
+            alt="foto"
+          />
+        </div>
+        <div class="col-6 col-md-3">
+          <img
+            src="filer/orestad-til-islands-brygge-pentax-auto-110-14.jpg"
+            alt=""
+          />
+          <img
+            class="m-t-md"
+            src="filer/orestad-til-islands-brygge-pentax-auto-110-12.jpg"
+            alt=""
+          />
+          <img
+            class="m-t-md"
+            src="filer/orestad-til-islands-brygge-pentax-auto-110-8.jpg"
+            alt=""
+          />
+          <img
+            class="m-t-md"
+            src="filer/orestad-til-islands-brygge-pentax-auto-110.jpg"
+            alt=""
+          />
+          <img class="m-t-md" src="filer/lomo-smena-20.jpg" alt="" />
+          <img class="m-t-md" src="filer/lomo-smena-17.jpg" alt="" />
+          <img class="m-t-md" src="filer/lomo-smena-15.jpg" alt="" />
+          <img class="m-t-md" src="filer/tyk-taage-i-orestad.jpg" alt="" />
+        </div>
+        <div class="col-6 col-md-3">
+          <img
+            src="filer/agfa-genanvendeligt-kamera-35mm-film-2-5.jpg"
+            alt=""
+          />
+          <img
+            class="m-t-md"
+            src="filer/agfa-genanvendeligt-kamera-35mm-11.jpg"
+            alt=""
+          />
+          <img
+            class="m-t-md"
+            src="filer/agfa-genanvendeligt-kamera-35mm-8.jpg"
+            alt=""
+          />
+          <img
+            class="m-t-md"
+            src="filer/agfa-genanvendeligt-kamera-35mm-5.jpg"
+            alt=""
+          />
+          <img
+            class="m-t-md"
+            src="filer/amarminoen-med-et-agfa-le-box-12.jpg"
+            alt=""
+          />
+          <img
+            class="m-t-md"
+            src="filer/amarminoen-med-et-agfa-le-box-11.jpg"
+            alt=""
+          />
+          <img
+            class="m-t-md"
+            src="filer/amarminoen-med-et-agfa-le-box-3.jpg"
+            alt=""
+          />
+          <img
+            class="m-t-md"
+            src="filer/orestad-til-islands-brygge-pentax-auto-110-19.jpg"
+            alt=""
+          />
+          <img
+            class="m-t-md"
+            src="filer/orestad-til-islands-brygge-pentax-auto-110-17.jpg"
+            alt=""
+          />
+          <img
+            class="m-t-md"
+            src="filer/orestad-til-islands-brygge-pentax-auto-110-16.jpg"
+            alt=""
+          />
+        </div>
+        <div class="col-6 col-md-3">
+          <img src="filer/nikkormat-ft2-remiseparken-7.jpg" alt="" />
+          <img
+            class="m-t-md"
+            src="filer/nikkormat-ft2-remiseparken-2.jpg"
+            alt=""
+          />
+          <img
+            class="m-t-md"
+            src="filer/nikkormat-ft2-orestad-c-6.jpg"
+            alt=""
+          />
+          <img
+            class="m-t-md"
+            src="filer/pinhole-objektiver-ved-eghjorten-3.jpg"
+            alt=""
+          />
+          <img class="m-t-md" src="filer/0008.jpg" alt="" />
+          <img
+            class="m-t-md"
+            src="filer/anamorfiske-landskaber-amager-faelled-4.jpg"
+            alt=""
+          />
+          <img class="m-t-md" src="filer/_6090022.jpeg" alt="" />
+          <img class="m-t-md" src="filer/_6090016.jpeg" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="grid">
+        <div class="col-12 col-md-4 col-md-start-3">
+          <img src="filer/kobenhavnerbilleder-sten-simons.jpg" alt="" />
+        </div>
+        <div class="col-12 col-md-4">
+          <h1>Køb bogen</h1>
+          <p>Bogen er til salg i alle de store boghandler.</p>
+          <p>
+            Lige nu kan du få 10% online rabat ved at købe den i William Dams
+            boghandel. Brug rabatkoden koebenhavnerbilleder.
+          </p>
+          <button type="submit" class="btn btn-primary btn-full">
+            Køb hos William Dam!
+          </button>
+        </div>
+      </div>
+    </div>
     <!-- Main slut -->
 
     <!-- Footer -->
     <footer class="container-full bg-dark text-bright">
-        <div class="container text-center p-md">
-            <p>Lavet med ❤️ af Stefan</p>
-        </div>
+      <div class="container text-center p-md">
+        <p>Lavet med ❤️ af Stefan</p>
+      </div>
     </footer>
 
     <!-- Inkluderer scripts-->
     <script src="js.js"></script>
-</body>
+  </body>
 </html>
